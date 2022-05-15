@@ -26,7 +26,7 @@ public class ejercicio_5_7 {
 		int []arrenteros = new int [MAX];
 		int numero;
 		BufferedReader entrada = new BufferedReader ( new InputStreamReader(System.in));
-		aaaa
+		
 
 	}
 

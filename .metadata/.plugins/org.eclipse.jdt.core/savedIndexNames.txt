@@ -10,7 +10,6 @@ INDEX VERSION 1.127+C:\Users\Usuario\programacionTUDAI\.metadata\.plugins\org.ec
 3837281814.index
 3613414938.index
 2601815777.index
-495250236.index
 869668153.index
 3914424354.index
 4162515154.index

@@ -1,0 +1,11 @@
+/*Escribir un programa que mientras el usuario cargue desde
+teclado un caracter letra minúscula, llame a un método
+que imprime por pantalla la tabla de multiplicar de 9.*/
+public class ejercicio_3_6 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

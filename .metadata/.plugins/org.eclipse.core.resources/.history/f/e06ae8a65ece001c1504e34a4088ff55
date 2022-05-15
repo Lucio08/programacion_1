@@ -1,0 +1,11 @@
+/*Escribir un programa que mientras el usuario ingrese un caracter letra
+minúscula, acumule la cantidad de vocales que ingreso. Finalmente
+muestre por pantalla dicha cantidad.*/
+public class ejercicio6_5 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

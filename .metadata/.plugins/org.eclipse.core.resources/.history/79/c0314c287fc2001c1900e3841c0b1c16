@@ -1,0 +1,22 @@
+/*Se pide: hacer un programa completo en el cual se solicite de teclado el
+ingreso de un día, un número de mes, y un año; luego calcule la cantidad
+de días desde la última luna nueva (edad lunar), e informe por pantalla en
+cual de las 4 fases se corresponde para esa fecha (ver cálculo en ejercicios
+resueltos p4e4.xlsx).*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ejercicio4_2parte_4 {	
+	public static void main(String[] args) {
+		final int ciclo = 19;
+		int dia, mes, anio,numeroAureo, epacta, edadLunar;
+		
+		try{
+			
+		}catch(Exception exc){
+			System.out.println(exc);
+		}
+
+	}
+
+}

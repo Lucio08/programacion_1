@@ -1,0 +1,55 @@
+/*Hacer un programa que dado un arreglo de enteros de tamaño 10 que se encuentra
+precargado, solicite al usuario un numero entero y lo agregue al principio del arreglo (posición
+0). Para ello tendrá que realizar un corrimiento a derecha (se pierde el último valor del arreglo) y
+colocar el numero en el arreglo en la posición indicada.*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class ejercicio_4_7 {
+	public static final int MAX = 10;
+	public static final int MINVALOR = 0;
+	public static final int MAXVALOR = 10;
+	
+	public static void main(String[] args) {
+		int [] arrenteros = new int [MAX];
+		int numeroEntero, pos;
+		
+		BufferedReader entrada = new BufferedReader (new InputStreamReader (System.in));
+		try{
+			cargar_arreglo(arrenteros);
+			imprimir_arreglo(arrenteros);
+			System.out.println("Ingrerse un numero entero: ");
+			numeroEntero = Integer.valueOf(entrada.readLine());
+			agregar_numero_principio(arrenteros, numeroEntero);
+			imprimir_arreglo(arrenteros);
+		}catch(Exception exc){
+			System.out.println(exc);
+		}
+
+	}
+	public static void cargar_arreglo(int [] arrenteros){
+		Random r = new Random();
+		for(int pos = 0; pos < MAX; pos ++){
+			arrenteros[pos]= (r.nextInt(MAXVALOR-MINVALOR+1)+ MINVALOR);
+		}
+	}
+	public static void imprimir_arreglo(int [] arrenteros){
+		for(int pos = 0; pos < MAX; pos++){
+			System.out.println("Arrenteros: ["+pos+"]=>: " + arrenteros[pos] );
+		}
+	}
+	public static void agregar_numero_principio(int [] arrenteros, int numeroEntero){
+
+
+		int valorFinal = MAX-1;
+		int valorInicial = 0;
+		while (valorFinal > numeroEntero){
+			arrenteros[valorFinal] = arrenteros[valorFinal-1];
+			valorInicial = valorFinal;
+			valorFinal = numeroEntero;
+			
+		}
+	}
+	}
+

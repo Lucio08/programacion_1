@@ -1,0 +1,25 @@
+/*Escribir un programa que mientras el usuario cargue desde
+teclado un caracter letra minúscula, llame a un método
+que imprime por pantalla la tabla de multiplicar de 9.*/
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ejercicio_3_6 {
+	//declarar variables y entrada
+	//carga por teclado
+	//mientras se carga una letra
+		//llamar a un metodo que imprima la tabla del 9
+	public static void main(String[] args) {
+		char letra;
+		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+		
+		try{
+			
+		}catch(Exception exc){
+			System.out.println(exc);
+		}
+
+	}
+
+}

@@ -1,0 +1,13 @@
+/*Hacer un programa que dado un arreglo de enteros de tamaño 10 que se encuentra
+precargado, solicite al usuario un numero entero y elimine la primer ocurrencia de numero (un
+número igual) en el arreglo si existe. Para ello tendrá que buscar la posición y si está, realizar un
+corrimiento a izquierda (queda una copia de la última posición del arreglo en la anteúltima
+posición).*/
+public class ejercicio_5_7 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

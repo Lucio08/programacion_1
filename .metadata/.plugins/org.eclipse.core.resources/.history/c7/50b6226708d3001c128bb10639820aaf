@@ -1,0 +1,44 @@
+/*Hacer un programa que dado un arreglo de enteros de tamaño 10 que se encuentra
+precargado, solicite al usuario una posición y realice un corrimiento a izquierda o hacia la
+menor posición del arreglo.*/
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class ejercicio_3_7 {
+	public static final int MAX = 10;
+	public static final int MAXVALOR = 10;
+	public static final int MINVALOR = 1;
+
+	public static void main(String[] args) {
+		int []arrenteros = new int [MAX];
+		int pos;
+		BufferedReader entrada = new BufferedReader (new InputStreamReader(System.in));
+		try{
+			cargar_arreglo(arrenteros);
+			imprimir_arreglo(arrenteros);
+			corrimiento_izquierda(pos);
+			System.out.println("Ingrese una posicion: ");
+			pos = Integer.valueOf(entrada.readLine());	
+			
+		}catch(Exception exc){
+			System.out.println(exc);
+		}
+		
+	}
+	public static void cargar_arreglo(int [] arrenteros){
+		Random r = new Random();
+		for (int pos = 0; pos < MAX; pos++) {
+			arrenteros[pos] = (r.nextInt(MAXVALOR - MINVALOR + 1) + MINVALOR);
+		}
+	}
+	public static void obtener_numeros_pares(int [] arr){
+		for (int pos = 0; pos < MAX; pos++){
+			if( arr[pos]% 2 == 0){
+				System.out.println("La cantidad de numeros pares es: " + pos);
+			}
+		}
+	
+}
+}

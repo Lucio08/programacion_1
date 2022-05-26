@@ -32,7 +32,7 @@ public class ejercicio_5_7 {
 	
 	public static void main(String[] args) {
 		int [] arrenteros = new int [MAX];
-		int numero;
+		int numeroIngresado;
 		int pos;
 		
 		BufferedReader entrada = new BufferedReader ( new InputStreamReader(System.in));
@@ -42,12 +42,12 @@ public class ejercicio_5_7 {
 			
 			//Si el numero existe
 			System.out.println("Ingrese un numero: ");
-			numero = Integer.valueOf(entrada.readLine());
+			numeroIngresado = Integer.valueOf(entrada.readLine());
 			
 				//buscar posicion, si esta eliminar ocurrencia
-			eliminar_ocurrencia( arrenteros, numero);
+			eliminiar_ocurrencia(arrenteros, numeroIngresado);
 						//si la posicion está, corrimieto de izquierda
-			
+			corrimiento_Izq(arrenteros, pos);
 					
 				imprimir_arreglo_int(arrenteros);
 		}catch(Exception exc){
@@ -74,7 +74,7 @@ public class ejercicio_5_7 {
 			corrimiento_Izq(arrenteros,pos);	
 		}
 	}
-	public static int obtener_pos_arreglo(int [] arr, int numero){
+	public static int obtener_pos_arreglo(int [] arrenteros, int numero){
 		int posicion = 0;
 		while ((posicion < MAX) && (arr[posicion] != numero)){
 			posicion++;

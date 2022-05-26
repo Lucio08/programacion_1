@@ -47,7 +47,7 @@ public class ejercicio_5_7 {
 				//buscar posicion, si esta eliminar ocurrencia
 			eliminar_ocurrencia( arrenteros, numero);
 						//si la posicion está, corrimieto de izquierda
-			
+			corrimiento_Izq(arrenteros, pos);
 					
 				imprimir_arreglo_int(arrenteros);
 		}catch(Exception exc){
